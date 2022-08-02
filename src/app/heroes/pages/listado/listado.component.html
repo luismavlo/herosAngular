@@ -1,0 +1,9 @@
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+<br />
+
+<div class="content-cards">
+  <div *ngFor="let heroe of heroes">
+    <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
+  </div>
+</div>

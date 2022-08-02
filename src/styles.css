@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.content-cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  min-height: 100%;
+}
+
+.container-superhero{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-superhero--section {
+  display: flex;
+  width: 50%;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.fxDirectionCol{
+  display: flex;
+  flex-direction: column;
+}
+
+.fxDirectionRow{
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+.content-btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media screen and (min-width: 464px) {
+  .content-cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 730px) {
+  .content-cards{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-superhero{
+    flex-direction: row;
+  }
+}
+
+
